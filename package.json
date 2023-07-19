@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "node ./cli/dev.mjs",
     "build": "sass ./src/main.scss ./dist/main.css --no-source-map"
   },
   "keywords": [],
