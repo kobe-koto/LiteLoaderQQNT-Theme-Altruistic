@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "type": "theme",
+  "name": "Theme Altruistic",
+  "slug": "Theme_Altruistic",
+  "description": "「Altruistic」，簡潔且靈動的 QQNT 主題。",
+  "version": "1.0.0",
+  "thumbnail": "./res/icon.png",
+  "author": [
+    {
+      "name": "kobe-koto",
+      "link": "https://github.com/kobe-koto"
+    }
+  ],
+  "repository": {
+    "repo": "kobe-koto/LiteLoaderQQNT-Theme-Altruistic",
+    "branch": "main"
+  },
+  "platform": [
+    "win32",
+    "linux",
+    "darwin"
+  ],
+  "injects": {
+    "renderer": "./renderer.js",
+    "main": "./main.js",
+    "preload": "./preload.js"
+  }
+}
