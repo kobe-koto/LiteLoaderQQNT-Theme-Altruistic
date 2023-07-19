@@ -9,7 +9,7 @@
 ```bash
 git clone https://github.com/kobe-koto/LiteLoaderQQNT-Theme-Altruistic.git
 
-# 在部分網際網路受到有規劃性的審查的國家或地區，可以使用 ghproxy.com 提供的服務加速 clone。
+# 在部分網際網路受到有規劃性的審查的國家或地區，可以使用 ghproxy.com 或其他類似服務加速 clone。
 git clone https://ghproxy.com/https://github.com/kobe-koto/LiteLoaderQQNT-Theme-Altruistic.git
 ```
 
