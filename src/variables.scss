@@ -1,0 +1,24 @@
+body.q-theme-tokens-light {
+    --SemiTransparent: rgba(255, 255, 255, 0.65);
+}
+body.q-theme-tokens-dark {
+    --SemiTransparent: rgba(0, 0, 0, 0.65);
+}
+body {
+    --ThemeColor: #ff3352;
+    --LinkColor: var(--ThemeColor);
+}
+
+
+
+// do not modify these.
+body {
+    --brand_standard: var(--ThemeColor) !important;
+    --text_link: var(--LinkColor) !important;
+    --nt_brand_standard_2_overlay_hover_brand_2_mix: var(--ThemeColor) !important;
+    --nt_brand_standard_2_overlay_pressed_brand_2_mix: var(--ThemeColor) !important;
+    --host_bubble_bg_css_value: var(--ThemeColor) !important;
+}
+::selection {
+    background-color: var(--ThemeColor);
+}

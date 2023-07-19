@@ -1,0 +1,39 @@
+div.message-panel > div.recent-contact {
+    .contact-top-bar {
+        .contact-adder-btn.top-bar__adder {
+            border-radius: 50%;
+
+            &::after {
+                content: "";
+                transition: background-color ease 0.3s;
+                height: 100%;
+                width: 100%;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &:hover::after {
+                background-color: var(--overlay_hover);
+            }
+        }
+    }
+
+    .list-toggler {
+        div.list-item {
+            transition: transform ease 0.3s;
+            border-radius: 8px;
+            margin: 8px auto;
+            width: 92.5%;
+            &:hover {
+                transform: scale(1.015) translateY(-1px);   
+            }
+            &:active {
+                transform: scale(.996) translateY(-1px);   
+            }
+            .list-item__content {
+                transition: background-color ease 0.3s;
+            }
+        }
+    }
+}

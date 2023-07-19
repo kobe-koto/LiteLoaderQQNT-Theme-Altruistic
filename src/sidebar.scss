@@ -1,0 +1,11 @@
+aside.sidebar {
+    .sidebar__lower {
+        .func-menu__item {
+            transition: transform ease .15s;
+
+            &:active {
+                transform: scale(.95);
+            }
+        }
+    }
+}

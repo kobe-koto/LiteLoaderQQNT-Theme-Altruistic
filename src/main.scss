@@ -1,0 +1,20 @@
+@import "./variables.scss";
+
+// in settings.
+@import "./settings.scss";
+
+// in chat.
+@import "./sidebar.scss";
+@import "./recent-contact.scss";
+@import "./messages-panel.scss";
+
+
+// global css 
+i.q-icon {
+    transition: color ease 0.2s,
+                fill ease 0.2s,
+                transform ease .15s;
+    &:active {
+        transform: scale(.975);
+    }
+}

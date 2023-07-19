@@ -1,0 +1,11 @@
+// on settings layout 
+.setting-layout {
+    .setting-tab .nav-bar {
+        .nav-item {
+            margin-bottom: 12px;
+            &::before {
+                content: "";
+            }
+        }
+    }
+}

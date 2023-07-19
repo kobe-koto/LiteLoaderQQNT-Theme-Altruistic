@@ -1,0 +1,30 @@
+div.message-panel > div.aio {
+    div.side-panel {
+        background-color: var(--SemiTransparent);
+        backdrop-filter: blur(18px);
+        .more-panel {
+            > .q-list .q-list-item,
+            > .q-button {
+                background-color: var(--SemiTransparent);
+            }
+        }
+    }
+    .group-chat {
+        display: block;
+
+        main.chat-msg-area {
+            .chat-msg-area__vlist .message:last-child {
+                padding-bottom: 25vh;
+            }
+            .chat-msg-area__tip--bottom.q-notification {
+                transform: translateY(-25vh);
+            }
+        }
+        .chat-input-area {
+            transform: translateY(-100%);
+            width: 100%;
+            background-color: var(--SemiTransparent);
+            backdrop-filter: blur(20px);
+        }
+    }
+}
