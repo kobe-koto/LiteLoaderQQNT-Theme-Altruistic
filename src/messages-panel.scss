@@ -1,7 +1,11 @@
 div.message-panel > div.aio {
+    > .group-panel {
+        border: none;
+    }
+    
     div.side-panel {
         background-color: var(--SemiTransparent);
-        backdrop-filter: blur(18px);
+        backdrop-filter: blur(20px);
         .more-panel {
             > .q-list .q-list-item,
             > .q-button {
@@ -24,7 +28,7 @@ div.message-panel > div.aio {
             transform: translateY(-100%);
             width: 100%;
             background-color: var(--SemiTransparent);
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(5px);
         }
     }
 }

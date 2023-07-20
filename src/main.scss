@@ -18,3 +18,18 @@ i.q-icon {
         transform: scale(.975);
     }
 }
+
+div.tab-container {
+    background: var(--SemiTransparent) !important;
+}
+
+
+.q-context-menu, .q-context-sub-menu__container {
+    border-radius: 12px !important;
+    padding: 10px 0 !important;
+    .q-context-menu-item {
+        margin: 0 !important;
+        padding: 6px 8px;
+        border-radius: 0;
+    }
+}

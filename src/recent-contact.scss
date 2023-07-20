@@ -1,4 +1,5 @@
 div.message-panel > div.recent-contact {
+    background: var(--ClearlyTransparent);
     .contact-top-bar {
         .contact-adder-btn.top-bar__adder {
             border-radius: 50%;
@@ -20,6 +21,12 @@ div.message-panel > div.recent-contact {
     }
 
     .list-toggler {
+        div.viewport-list {
+            background: none !important;
+            &__inner {
+                background: none !important;
+            }
+        }
         div.list-item {
             transition: transform ease 0.3s;
             border-radius: 8px;

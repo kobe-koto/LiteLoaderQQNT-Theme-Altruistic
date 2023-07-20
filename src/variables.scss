@@ -1,14 +1,15 @@
-body.q-theme-tokens-light {
-    --SemiTransparent: rgba(255, 255, 255, 0.65);
-}
-body.q-theme-tokens-dark {
+body[q-theme=dark] {
     --SemiTransparent: rgba(0, 0, 0, 0.65);
+    --ClearlyTransparent: rgba(0, 0, 0, 0.25);
+}
+body[q-theme=light] {
+    --SemiTransparent: rgba(255, 255, 255, 0.65);
+    --ClearlyTransparent: rgba(255, 255, 255, 0.25);
 }
 body {
     --ThemeColor: #ff3352;
     --LinkColor: var(--ThemeColor);
 }
-
 
 
 // do not modify these.
