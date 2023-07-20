@@ -1,6 +1,6 @@
 # Altruistic
 
-## 一個簡潔且靈動的 QQ 主題，適用於 LiteLoaderQQNT 。 
+## 一個簡潔且靈動的 QQ 主題，適用於 LiteLoader QQNT 。 
 
 ### 從原始碼安裝
 
