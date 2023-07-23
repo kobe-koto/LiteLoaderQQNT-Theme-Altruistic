@@ -24,7 +24,10 @@ div.tab-container {
 }
 
 
-.q-context-menu, .q-context-sub-menu__container {
+.q-context-menu.more-menu,
+.more-menu .q-context-sub-menu__container,
+.q-context-menu,
+.q-context-sub-menu__container {
     border-radius: 12px !important;
     padding: 10px 0 !important;
     .q-context-menu-item {
