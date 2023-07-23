@@ -47,6 +47,31 @@ function onLoad(plugin) {
             updateStyle(window.webContents);
         }
     );
+
+    ipcMain.handle(
+        "LiteLoader.Theme_Altruistic.getSettings",
+        () => {
+            try {
+                return JSON.parse( fs.readFileSync(SettingsPath, "utf-8") );
+            } catch (error) {
+                console.error(error);
+                return { ERROR: error };
+            }
+        }
+    );
+
+    ipcMain.handle(
+        "LiteLoader.Theme_Altruistic.setSettings",
+        ( content ) => {
+            try {
+                fs.writeFileSync(SettingsPath, JSON.stringify(content), "utf-8");
+                return { msg: "OK", info: "ok." };
+            } catch (error) {
+                console.error(error);
+                return { msg: "ERROR", info: error };
+            }
+        }
+    );
 }
 
 
