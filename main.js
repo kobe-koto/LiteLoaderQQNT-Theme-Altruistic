@@ -42,7 +42,7 @@ function watchCSSChange(webContents) {
 function onLoad(plugin) {
     ipcMain.on(
         "LiteLoader.Theme_Altruistic.rendererReady",
-        (event, message) => {
+        (event) => {
             const window = BrowserWindow.fromWebContents(event.sender);
             updateStyle(window.webContents);
         }
