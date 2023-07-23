@@ -8,4 +8,13 @@
             }
         }
     }
+    .setting-main {
+        .Theme_Altruistic.plugin-config-view {
+            input#BackgroundOpacity {
+                appearance: auto !important;
+                width: 100%;
+                max-width: 720px;
+            }
+        }
+    }
 }

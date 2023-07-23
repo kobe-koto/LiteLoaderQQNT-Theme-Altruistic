@@ -40,6 +40,24 @@ function watchCSSChange(webContents) {
 
 
 function onLoad(plugin) {
+    const PluginDataPath = plugin.path.data;
+    const SettingsPath = path.join(PluginDataPath, "settings.json");
+
+    if (!fs.existsSync(PluginDataPath)) {
+        fs.mkdirSync(PluginDataPath, { recursive: true });
+    }
+
+    if (!fs.existsSync(SettingsPath)) {
+        fs.writeFileSync(SettingsPath, JSON.stringify(
+            {
+                CSSVariables: {
+                    ThemeColor: "#ff3352",
+                    BackgroundOpacity: 0.35
+                }
+            }
+        ));
+    }
+
     ipcMain.on(
         "LiteLoader.Theme_Altruistic.rendererReady",
         (event) => {
